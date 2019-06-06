@@ -1,10 +1,15 @@
 <?php
 namespace App\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
-class MainController
+use Symfony\Component\HttpFoundation\Request;
+class MainController extends AbstractController
 {
-    public function homepage()
-    {
-        return new Response('OMG! My first page already! WOOO!');
+    /**
+     * @Route("/main", name="main_home")
+     */
+    public function home(){
+        return $this->render( 'main/home.html.twig' );
     }
-}
+} 

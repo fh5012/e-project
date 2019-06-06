@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil - {{ parent() }}{% endblock %}
+
+{% block body %}
+
+<div class="landing">
+    <div class="landing-container">
+        <h1>e-Project</h1>
+        <p>Learn new things everyday</p>
+
+        <a href="{{ path('main_home') }}" class="btn btn-info">Let's Go</a>
+    </div>
+</div>
+
+{% endblock %}
