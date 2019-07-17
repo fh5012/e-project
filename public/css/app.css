@@ -1,8 +1,44 @@
 html, body{
+    background-color: lavender ;
     min-height: 100vh;
     margin: 0;
-    background-color: rgba( 0, 0, 0, 0.5 );
     /* font-family: 'Assistant', sans-serif; */
+}
+/* top-header */
+.top-header{
+    border:3px solid #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: space-around;
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    -webkit-box-shadow: 10px 10px 32px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 32px 4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 32px 4px rgba(0,0,0,0.75);
+    width: 100%;
+}
+
+.header h1{
+    font-family: 'Assistant', sans-serif;
+    color:black;
+}
+
+.header a{
+    text-decoration: none;
+}
+
+.header span{
+    font-family: 'Assistant', sans-serif;
+    color: goldenrod;
+    font-size: 20px;
 }
 .landing{
     font-family: 'Assistant', sans-serif;
@@ -22,6 +58,14 @@ html, body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+
+
+
+/* main */
+.main{
+    background-color: lavender ;
 }
 
 
@@ -132,6 +176,18 @@ html, body{
   
     #logreg-forms  .google-btn:after{
         content:'Google+';
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .header h1{
+        font-size: 20px;
+    }
+
+    .header span{
+        font-size:11px;
     }
     
 }

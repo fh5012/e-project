@@ -4,10 +4,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
-class MainController extends AbstractController
+class HomeController extends AbstractController
 {
     /**
-     * @Route("/main", name="main_home")
+     * @Route("/home", name="welcome")
      */
     public function home(){
         return $this->render( 'main/home.html.twig' );
