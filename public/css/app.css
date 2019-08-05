@@ -74,11 +74,19 @@ html, body{
 .main{
     background-color: rgb(61, 61, 75);
 }
+
+.col{
+    border:2px solid black;
+    border-radius: 5px;
+    margin: 2px;
+
+}
 /* jumbotron -1 */
 .jumbotron{
     background-image:url("https://images.pexels.com/photos/985635/pexels-photo-985635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-position: fixed;
+    background-position: relative;
     background-repeat: no-repeat;
+    background-size:cover;
     -webkit-box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.59);
     -moz-box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.59);
     box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.59);
@@ -103,10 +111,58 @@ html, body{
 
 /* navbar */
 .navbar{
+    border-bottom:  4px solid rgb(102, 1, 1);
     -webkit-box-shadow: 10px 10px 5px 3px rgba(61,61,75,1);
     -moz-box-shadow: 10px 10px 5px 3px rgba(61,61,75,1);
     box-shadow: 10px 10px 5px 3px rgba(61,61,75,1);
 }
+
+
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(102, 1, 1);
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+  }
+
+  .nav-item:hover {
+    opacity: 1;
+  }
+
+  .nav-item::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: rgb(102, 1, 1);
+  }
+
+  .nav-item::before {
+    width: 0%;
+    bottom: 10px;
+  }
+
+  .nav-link:hover::before {
+    width: 100%;
+  }
+
+  .dress-price{
+      color: lightgrey;
+      font-family: 'Times New Roman', Times, serif;
+      font-size:30px;
+  }
+
+  /* FOOTER */
+.footer{
+    background-color: rgb(24, 2, 2);
+}
+  
 
 /* sign in FORM */
 #logreg-forms{
